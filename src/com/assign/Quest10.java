@@ -1,0 +1,22 @@
+package com.assign;
+//Q10 Write a Java Program to Reverse a string without using string inbuilt function reverse(). 
+
+import java.util.Scanner;
+
+public class Quest10 {
+
+	public static void main(String[] args) {
+
+		String s;  
+		
+		@SuppressWarnings("resource")
+		Scanner sc=new Scanner(System.in);  
+		System.out.print("Enter a String: ");  
+		s=sc.nextLine();                    //reading string from user  
+		System.out.print("After reverse string is: ");  
+		for(int i=s.length();i>0;--i)                //i is the length of the string  
+		{  
+		System.out.print(s.charAt(i-1));            //printing the character at index i-1  
+	  }
+	}
+}
